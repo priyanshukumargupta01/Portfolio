@@ -1,10 +1,11 @@
-import React from 'react'
+
 
 const App = () => {
   return (
-    <div>
-      
-    </div>
+    <div className="min-h-screen overflow-x-hidden">
+      <Navbar />
+      <main></main>
+    </div> 
 
   )
 }
