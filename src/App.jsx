@@ -11,7 +11,7 @@ import Testimonial from "./sections/Testimonials";
 
 const App = () => {
   return (
-    <div>
+    <div className="relative gradient text-black">
       <Navbar />
       <Home />
       <About />
