@@ -1,5 +1,6 @@
 
 import Navbar from "./componenets/Navbar";
+import ParticalBackground from "./componenets/ParticleBackground"
 import About from "./sections/About"
 import Home from "./sections/Home";
 import Contact from "./sections/Contact";
@@ -12,6 +13,7 @@ import Testimonial from "./sections/Testimonials";
 const App = () => {
   return (
     <div className="relative gradient text-black">
+      <ParticalBackground /> 
       <Navbar />
       <Home />
       <About />
