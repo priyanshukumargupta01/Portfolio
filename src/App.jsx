@@ -1,6 +1,6 @@
 
 import Navbar from "./componenets/Navbar";
-import customCursor from "./componenets/CustomCursor"
+import CustomCursor from "./componenets/CustomCursor"
 import ParticalBackground from "./componenets/ParticleBackground"
 import About from "./sections/About"
 import Home from "./sections/Home";
@@ -14,7 +14,7 @@ import Testimonial from "./sections/Testimonials";
 const App = () => {
   return (
     <div className="relative gradient text-black">
-      <customCursor />
+      <CustomCursor />
       <ParticalBackground /> 
       <Navbar />
       <Home />
