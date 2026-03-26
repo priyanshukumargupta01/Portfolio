@@ -1,9 +1,19 @@
-import React from 'react'
+import { useState } from "react";
+import OverlayMenu from "./OverlayMenu"
 
-const Navbar = () => {
-  return (
-    <div>Navbar</div>
-  )
+
+export default function Navbar(){
+    const [menuOpen , setMenuOpen]= useState(false);
+    const [visible, setVisible] = useState(true)
+
+    return(
+      <>
+      <nav className={`fixed top-0 left-0`}>
+
+
+      </nav>
+      <OverlayMenu />
+      </>
+    )
+  
 }
-
-export default Navbar
