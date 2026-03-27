@@ -10,25 +10,29 @@ export default function Navbar() {
   return (
     <>
       <nav
-        className={`fixed top-0 left-0 w-full flex items-center justify-between px-6 py-4 z-50 transition-transform duration-300 ${visible ? "translate-y-o" : -translate - y - full}`}
+        className={`fixed top-0 left-0 w-full flex items-center justify-between px-6 py-4 z-50 transition-transform duration-300 ${
+          visible ? "translate-y-0" : "-translate-y-full"
+        }`}
       >
-        <div className="flex gap-2 items-center ">
+        <div className="flex gap-2 items-center">
           <img src={Logo} alt="logo" className="w-18 h-18" />
           <div className="text-2xl font-bold hidden sm:block">
             Priyanshu Gupta
           </div>
         </div>
-        <div className="block lg:absolute right-0 lg:transform-x-1/2 mr-15 text-3xl focus:outline-none">
+
+        <div className="block lg:absolute right-0 lg:translate-x-1/2 mr-15 text-3xl focus:outline-none">
           <button
             onClick={() => {
-            setMenuOpen(true);
+              setMenuOpen(true);
             }}
           >
             <FiMenu />
           </button>
         </div>
       </nav>
-      <OverlayMenu isopen={menuOpen} onclose={() => setMenuOpen(false)} />
+
+      <OverlayMenu isOpen={menuOpen} onClose={() => setMenuOpen(false)} />
     </>
   );
 }
