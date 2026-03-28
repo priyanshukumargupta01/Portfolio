@@ -1,5 +1,6 @@
 import ParticalBackground from "../componenets/ParticleBackground";
 import React, { useState, useEffect, useMemo } from "react";
+import { motion } from "framer-motion";
 
 export default function Home() {
   const roles = useMemo(() => ["Web Developer", "Software Developer"], []);
@@ -60,10 +61,30 @@ export default function Home() {
         />
       </div>
 
-      {/* Typing text */}
-      <h1 className="text-white text-3xl relative z-10">
-        {roles[index].substring(0, subIndex)}
-      </h1>
+      <div className="relative z-10 h-full w-full max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2">
+        <div className="flex flex-col justify-center h-full text-center lg:text-left relative">
+          
+          <div className="w-full lg:pr-24 mx-auto max-w-([48rem])">
+            
+            <motion.div
+              className="mb-3 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-white tracking-wide min-h-[1.6em]"
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+            >
+              <span>
+                {roles[index].substring(0, subIndex)}
+              </span>
+
+              <span
+                className="inline-block w-([2px]) ml-1 bg-white animate-pulse align-middle"
+                style={{ height: "1em" }}
+              />
+            </motion.div>
+
+          </div>
+        </div>
+      </div>
     </section>
   );
 }
