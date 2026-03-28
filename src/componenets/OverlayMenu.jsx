@@ -5,9 +5,15 @@ export default function OverlayMenu({ isOpen, onClose }) {
   return (
     <AnimatePresence>
       {isOpen && (
-        <motion.div className="fixed inset-0 flex items-center justify-center z-50">
-          
-          <button onClick={onClose} className="absolute top-6 right-6 text-3xl">
+        <motion.div
+          className="fixed inset-0 flex items-center justify-center z-50 "
+          initial={{ clipPath: "circle(0% at ${origin})" }}
+          animate={{ clipPath: "circle(150% at ${origin})" }}
+          exit={{ clipPath: "circle(0% at ${origin})" }}
+          transition={{ duration: 0.7, ease: [0.4, 0.0, 0.2, 1] }}
+          style={{ backgroundColor: "rgba(0,0,0,0.9)" }}
+        >
+          <button onClick={onClose} className="absolute top-6 right-6 text-3xl text-white">
             <FiX />
           </button>
 
