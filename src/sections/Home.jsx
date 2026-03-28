@@ -98,8 +98,37 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 1.2 }}
-            >I enjoy turning ideas into real, working websites and apps that are simple, fast, and easy to use. I aim to create solutions that feel smooth, look clean, and make things better for the people who use them.
+            >
+              I enjoy turning ideas into real, working websites and apps that
+              are simple, fast, and easy to use. I aim to create solutions that
+              feel smooth, look clean, and make things better for the people who
+              use them.
             </motion.p>
+            <motion.div
+              className="mt-10 flex flex-wrap items-center justify-center lg:justify-start gap-6"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.8, duration: 0.8 }}
+            >
+              <a
+                href="#projects"
+                className="px-6 py-3 rounded-full font-medium text-lg text-white
+                  bg-gradient-to-r from-[#1cd8d2] via-[#00b8f8] to-[#302b63]
+                shadow-lg hover:scale-105 transition-all"
+              >
+                View My Work
+              </a>
+
+              <a
+                href="/Resume.pdf"
+                download
+                className="px-6 py-3 rounded-full text-lg font-medium
+              text-black bg-white hover:bg-gray-200
+                shadow-lg hover:scale-105 transition-all"
+              >
+                My Resume
+              </a>
+            </motion.div>
           </div>
         </div>
       </div>
