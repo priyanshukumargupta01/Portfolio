@@ -29,7 +29,7 @@ export default function Navbar() {
           </div>
         </div>
 
-        <div className="block lg:absolute right-0 lg:translate-x-1/2 mr-15 text-3xl focus:outline-none text-white">
+        <div className="block lg:absolute right-0 lg:translate-x-1/2 mr-15 :mr-2 text-3xl focus:outline-none text-white">
           <button
             onClick={() => {
               setMenuOpen(true);
