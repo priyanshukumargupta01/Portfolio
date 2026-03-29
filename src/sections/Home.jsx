@@ -3,6 +3,7 @@ import React, { useState, useEffect, useMemo } from "react";
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import avator from "../assets/avator.png";
 
 const socials = [
   {
@@ -168,24 +169,52 @@ export default function Home() {
               </a>
             </motion.div>
             <div className="mt-10 flex gap-5 text-2xl md:text-3xl justify-center lg:justify-start">
-  {socials.map(({ icon: Icon, label, href }) => (
-    <motion.a
-      href={href}
-      key={label}
-      target="_blank"
-      aria-label={label}
-      rel="noopener noreferrer"
-      variants={glowVariants}
-      initial="initial"
-      whileHover="hover"
-      whileTap="tap"
-      className="text-gray-300"
-    >
-      <Icon />
-    </motion.a>
-  ))}
-</div>
+              {socials.map(({ icon: Icon, label, href }) => (
+                <motion.a
+                  href={href}
+                  key={label}
+                  target="_blank"
+                  aria-label={label}
+                  rel="noopener noreferrer"
+                  variants={glowVariants}
+                  initial="initial"
+                  whileHover="hover"
+                  whileTap="tap"
+                  className="text-gray-300"
+                >
+                  <Icon />
+                </motion.a>
+              ))}
+            </div>
           </div>
+        </div>
+        <div className="relative hidden lg:block">
+          <div
+            className="absolute top-1/2 -translate-y-1/2 pointer-events-none"
+            style={{
+              right: "10px",
+              width: "min(22vw, 410px)",
+              height: "min(40vw, 760px)",
+              borderRadius: "50%",
+              filter: "blur(38px)",
+              opacity: 0.32,
+              background:
+                "conic-gradient(from 0deg, #1cd8d2, #00b8f8, #302b63, #1cd8d2)",
+            }}
+          />
+        <motion.img
+          src={avator}
+          alt="Priyanshu"
+          className="absolute top-1/2 -translate-y-1/2 object-contain select-none pointer-events-none"
+          style={{
+            right: "-30px",
+            width: "min(45vw, 780px)",
+            maxHeight: "90vh",
+          }}
+          initial={{ opacity: 0, y: 40, scale: 0.98 }}
+          animate={{ opacity: 1, y: 0, scale: 1 }}
+          transition={{ delay: 0.2, duration: 0.8 }}
+        />
         </div>
       </div>
     </section>
