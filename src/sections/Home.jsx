@@ -1,6 +1,44 @@
 import ParticalBackground from "../componenets/ParticleBackground";
 import React, { useState, useEffect, useMemo } from "react";
 import { motion } from "framer-motion";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+
+const socials = [
+  {
+    icon: FaXTwitter,
+    label: "X",
+    href: "",
+  },
+  {
+    icon: FaLinkedin,
+    label: "LinkedIn",
+    href: "https://linkedin.com/in/priyanshukumargupta",
+  },
+  {
+    icon: FaGithub,
+    label: "GitHub",
+    href: "https://github.com/priyanshukumargupta01",
+  },
+];
+
+const glowVariants = {
+  initial: { scale: 1, y: 0, filter: "drop-shadow(0 0 0 rgba(0,0,0,0))" },
+
+  hover: {
+    scale: 1.2,
+    y: -3,
+    filter:
+      "drop-shadow(0 0 8px rgba(13,88,204,0.9)) drop-shadow(0 0 18px rgba(16,185,129,0.8))",
+    transition: { type: "spring", stiffness: 300, damping: 15 },
+  },
+
+  tap: {
+    scale: 0.95,
+    y: 0,
+    transition: { duration: 0.08 },
+  },
+};
 
 export default function Home() {
   const roles = useMemo(() => ["Web Developer", "Software Developer"], []);
@@ -129,6 +167,24 @@ export default function Home() {
                 My Resume
               </a>
             </motion.div>
+            <div className="mt-10 flex gap-5 text-2xl md:text-3xl justify-center lg:justify-start">
+  {socials.map(({ icon: Icon, label, href }) => (
+    <motion.a
+      href={href}
+      key={label}
+      target="_blank"
+      aria-label={label}
+      rel="noopener noreferrer"
+      variants={glowVariants}
+      initial="initial"
+      whileHover="hover"
+      whileTap="tap"
+      className="text-gray-300"
+    >
+      <Icon />
+    </motion.a>
+  ))}
+</div>
           </div>
         </div>
       </div>
