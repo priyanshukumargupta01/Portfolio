@@ -1,33 +1,41 @@
-
+import CustomCursor from "./componenets/CustomCursor";
 import Navbar from "./componenets/Navbar";
-import CustomCursor from "./componenets/CustomCursor"
-// import ParticalBackground from "./componenets/ParticleBackground"
-import About from "./sections/About"
-import Home from "./sections/Home";
+// import ParticlesBackground from "./components/ParticlesBackground";
+import About from "./sections/About";
 import Contact from "./sections/Contact";
 import Experience from "./sections/Experience";
 import Footer from "./sections/Footer";
-import Project from "./sections/Projects";
-import Skill from "./sections/Skills";
-import Testimonial from "./sections/Testimonials"; 
+import Home from "./sections/Home";
+import Projects from "./sections/Projects";
+import Skills from "./sections/Skills";
+import Testimonials from "./sections/Testimonials";
+import IntroAnimation from "./componenets/IntroAnimation";
+import React, { useState } from "react";
 
-const App = () => {
+export default function App() {
+  const [introDone, setIntroDone] = useState(false);
+
   return (
-    <div className="relative gradient text-black">
-      <CustomCursor />
-      {/* <ParticalBackground />  */}
-      <Navbar />
-      <Home />
-      <About />
-      <Skill />
-      <Project />
-      <Experience />
-      <Testimonial />
-      <Contact />
-      <Footer />
+    <>
+      {!introDone && (
+        <IntroAnimation onFinish={() => setIntroDone(true)} />
+      )}
 
-    </div>
-  )
+      {introDone && (
+        <div className="relative gradient text-white">
+          <CustomCursor />
+          {/* <ParticlesBackground /> */}
+          <Navbar />
+          <Home />
+          <About />
+          <Skills />
+          <Projects />
+          <Experience />
+          <Testimonials />
+          <Contact />
+          <Footer />
+        </div>
+      )}
+    </>
+  );
 }
-
-export default App

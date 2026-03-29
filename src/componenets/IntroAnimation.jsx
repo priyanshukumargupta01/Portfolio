@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useState } from "react";
-import { AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 
 export default function IntroAnimation({ onFinish }) {
   const greetings = useMemo(
@@ -28,7 +28,7 @@ export default function IntroAnimation({ onFinish }) {
       const id = setInterval(() => setIndex((i) => i + 1), 180);
       return () => clearInterval(id);
     } else {
-      const t = setTimeout(() => setVisible(false), 3000);
+      const t = setTimeout(() => setVisible(false), 1000);
       return () => clearTimeout(t);
     }
   }, [index, greetings.length]);
