@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import p from "../assets/profile.jpg";
 
 export default function About() {
   const glows = [
@@ -28,8 +29,32 @@ export default function About() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true, amount: 0.4 }}
-        >
+        ></motion.div>
+        <motion.div className="relative w-[160px] h-[160px] md:w-[200px] md:h-[200px] rounded-2xl overflow-hidden shadow-2xl bg-gradient-to-br from-[#1cd8d2]/20 to-[#302b63]/20 border border-[#1cd8d2]/25">
+          <img
+            src={p}
+            alt="profile"
+            className="absolute inset-0 w-full h-full object-cover"
+          />
         </motion.div>
+
+        <div className="flex-1 flex flex-col justify-center text-center md:text-left">
+          <h2 className="text-4xl sm:text-5xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-[#1cd8d2] via-[#00b8f8] to-[#1cd8d2]">
+            Priyanshu Kumar
+          </h2>
+
+          <p className="mt-2 text-lg sm:text-xl text-white/90 font-semibold">
+            Software Developer
+          </p>
+
+          <p className="mt-4 text-gray-300 leading-relaxed text-base sm:text-lg max-w-2xl md:max-w-3xl">
+            I build scalable, modern applications with a strong focus on clean
+            architecture, delightful UX, and performance. My toolkit spans Java,
+            React, Next.js, TypeScript, Tailwind CSS, and RESTful APIs—bringing
+            ideas to life from concept to production with robust APIs and smooth
+            interfaces.
+          </p>
+        </div>
       </div>
     </section>
   );
