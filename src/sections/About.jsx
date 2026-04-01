@@ -1,11 +1,16 @@
-import React from 'react'
+export default function About(){
 
-const About = () => {
-  return (
-    <div className='h-screen w-full'>
-      About
-      </div>
-  )
+  const glows =[
+  
+  ]
+
+
+return(
+  <section id="abbout"
+  className="min-h-secren w-full flex items-center relative bg-black text-white overflow-hidden"
+  >
+    
+
+  </section>
+)
 }
-
-export default About
