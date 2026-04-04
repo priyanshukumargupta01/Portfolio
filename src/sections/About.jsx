@@ -72,22 +72,22 @@ export default function About() {
                   <div className="text-sm text-gray-400">{item.label}</div>
                   <div className="text-base font-semibold">{item.value}</div>
                 </motion.div>
-                
               ))}
-            </div><motion.div className="text-center md:text-left">
-  <h3>About Me</h3>
+            </div>
+            <motion.div className="text-center md:text-left">
+              <h3>About Me</h3>
 
-  <p>
-    I'm a Software Developer, Content Creator, and Web Developer — passionate
-    about building fast, resilient applications and sharing coding insights on
-    Instagram and YouTube.
-  </p>
+              <p>
+                I'm a Software Developer, Content Creator, and Web Developer —
+                passionate about building fast, resilient applications and
+                sharing coding insights on Instagram and YouTube.
+              </p>
 
-  <p>
-    I love turning ideas into scalable, user-friendly products that make an
-    impact.
-  </p>
-</motion.div>
+              <p>
+                I love turning ideas into scalable, user-friendly products that
+                make an impact.
+              </p>
+            </motion.div>
           </div>
         </motion.div>
       </div>
