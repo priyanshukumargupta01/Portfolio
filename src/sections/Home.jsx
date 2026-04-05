@@ -6,20 +6,20 @@ import { FaXTwitter } from "react-icons/fa6";
 import avator from "../assets/avator.png";
 
 const socials = [
+  // {
+  //   icon: FaXTwitter,
+  //   label: "X",
+  //   href: "",
+  // },
   {
-    icon: FaXTwitter,
-    label: "X",
-    href: "",
+    icon: FaGithub,
+    label: "GitHub",
+    href: "https://github.com/priyanshukumargupta01",
   },
   {
     icon: FaLinkedin,
     label: "LinkedIn",
     href: "https://linkedin.com/in/priyanshukumargupta",
-  },
-  {
-    icon: FaGithub,
-    label: "GitHub",
-    href: "https://github.com/priyanshukumargupta01",
   },
 ];
 
