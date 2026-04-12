@@ -4,7 +4,14 @@ import { motion } from "framer-motion";
 const SkillsInfo = [
   {
     title: "Frontend",
-    skills: [],
+    skills: [ 
+      {
+        name: "HTML",
+        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+      },
+      { 
+      }
+    ],
   },
   {
     title: "Tools",
@@ -21,7 +28,7 @@ const glows = [
 const Skills = () => (
   <section
     id="skills"
-    className="py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[20vw] font-sans bg-skills-gradient w-full h-screen relative bg-black overflow-hidden  "
+    className="py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[20vw] font-sans bg-skills-gradient w-full min-h-screen relative bg-black overflow-hidden  "
   >
     <div className="absolute inset-0 pointer-events-none">
       {glows.map((c, i) => (
@@ -62,6 +69,7 @@ const Skills = () => (
                 key={skill.name}
                 className="flex items-center justify-center space-x-2 bg-transparent border-2 border-gray-700 rounded-3xl py-2 px-2 sm:py-2 sm:px-2 text-center"
               >
+                
                 <img
                   src={skill.logo}
                   alt={`${skill.name} logo`}
