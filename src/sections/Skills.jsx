@@ -4,21 +4,65 @@ import { motion } from "framer-motion";
 const SkillsInfo = [
   {
     title: "Frontend",
-    skills: [ 
+    skills: [
       {
         name: "HTML",
         logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
       },
-      { 
-      }
+      {
+        name: "CSS",
+        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+      },
+      {
+        name: "JavaScript",
+        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+      },
+      {
+        name: "React",
+        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      },
+      {
+        name: "Tailwind CSS",
+        logo: "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg",
+      },
+       
     ],
   },
   {
     title: "Tools",
-    skills: [],
+    skills: [
+      {
+        name: "Git",
+        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+      },
+      {
+        name: "GitHub",
+        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+      },
+      {
+        name: "VS Code",
+        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
+      },
+    ],
+  },
+  {
+    title: "Languages",
+    skills: [
+      {
+        name: "C",
+        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg",
+      },
+      {
+        name: "C++",
+        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg",
+      },
+      {
+        name: "JavaScript",
+        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+      },
+    ],
   },
 ];
-
 const glows = [
   "-top-10 -left-10 w-[360px] h-[360px] opacity-20 blur-[120px]",
   "bottom-0 right-10 w-[420px] h-[420px] opacity-15 blur-[140px] delay-300",
@@ -67,7 +111,7 @@ const Skills = () => (
             {category.skills.map((skill) => (
               <div
                 key={skill.name}
-                className="flex items-center justify-center space-x-2 bg-transparent border-2 border-gray-700 rounded-3xl py-2 px-2 sm:py-2 sm:px-2 text-center"
+                className="flex hover:scale-105 items-center justify-center space-x-2 bg-transparent border-2 border-gray-700 rounded-3xl py-2 px-2 sm:py-2 sm:px-2 text-center"
               >
                 
                 <img
