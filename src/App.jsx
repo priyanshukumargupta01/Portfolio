@@ -29,8 +29,8 @@ export default function App() {
           <Home />
           <About />
           <Skills />
-          <Projects />
           <Experience />
+          <Projects />
           <Testimonials />
           <Contact />
           <Footer />
