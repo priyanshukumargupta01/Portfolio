@@ -53,11 +53,8 @@ export default function About() {
             </p>
 
             <p className="mt-4 text-gray-300 leading-relaxed text-base sm:text-lg max-w-2xl md:max-w-3xl">
-              I build scalable, modern applications with a strong focus on clean
-              architecture, delightful UX, and performance. My toolkit spans
-              Java, React, Next.js, TypeScript, Tailwind CSS, and RESTful
-              APIs—bringing ideas to life from concept to production with robust
-              APIs and smooth interfaces.
+            Computer Science student passionate about software development and problem-solving, currently focusing on DSA, JavaScript, and React. I learn by building projects, enjoy debugging, and aim to strengthen my fundamentals to prepare for real-world software roles, with an interest in AI.
+
             </p>
             <div className="mt-6 grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4 max-w-xl">
               {stats.map((item, i) => (
