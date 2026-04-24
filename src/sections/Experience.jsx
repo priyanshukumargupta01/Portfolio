@@ -71,7 +71,12 @@ const Experience = () => {
                 className="w-8 h-8 object-cover rounded-full"
               />
             </div>
-            
+            {/* content Section */}
+            <div className="bg-[rgba(255,255,255,0.1)] text-white p-6 rounded-lg shadow-2xl w-full sm:w-1/2">
+              <h3 className="text-xl font-bold">{experience.position}</h3>
+              <p className="text-gray-400">{experience.duration}</p>
+              <p className="mt-4">{experience.description}</p>
+            </div>
           </div>
         ))}
       </div>
