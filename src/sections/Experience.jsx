@@ -1,4 +1,4 @@
-
+import { motion } from "framer-motion";
 import google from "../assets/google.png";
 
 const experiences = [
@@ -72,7 +72,13 @@ const Experience = () => {
               />
             </div>
             {/* content Section */}
-            <div className="bg-[rgba(255,255,255,0.1)] text-white p-6 rounded-lg shadow-2xl w-full sm:w-1/2 ">
+            <motion.div
+              className="flex flex-wrap gap-1 lg:gap-5 py-10 justify-between"
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true, amount: 0.4 }}
+              className="bg-[rgba(255,255,255,0.1)] text-white p-6 rounded-lg shadow-2xl w-full sm:w-1/2 ">
               <div className="flex mb-4 items-center">
                 <img className="w-15 h-15 object-cover rounded" src={experience.img} />
                 <div className="ml-4">
@@ -82,7 +88,7 @@ const Experience = () => {
                 </div>
               </div>
               <p className="mt-4">{experience.description}</p>
-            </div>
+            </motion.div>
           </div>
         ))}
       </div>
