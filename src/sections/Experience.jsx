@@ -3,6 +3,14 @@ import google from "../assets/google.png";
 
 const experiences = [
   {
+    id: 2,
+    company: "Google",
+    position: "Google Student Ambassador",
+    duration: "March 2026 - Present",
+    description: "As a selected Google Student Ambassador again, I continue to promote Google technologies and developer tools within my campus community. I organize events, share insights, and support fellow students in their tech journeys.",
+    img: google
+  },
+  {
     id: 1,
     company: "Google",
     position: "Google Student Ambassador",
@@ -10,14 +18,6 @@ const experiences = [
     description: "As a Google Student Ambassador, I actively promoted Google technologies and developer tools within my campus community. I organized sessions, shared knowledge, and helped fellow students explore opportunities in technology while building a strong developer network.",
     img: google
   },
-  {
-    id: 2,
-    company: "Google",
-    position: "Google Student Ambassador",
-    duration: "March 2026 - Present",
-    description: "As a selected Google Student Ambassador again, I continue to promote Google technologies and developer tools within my campus community. I organize events, share insights, and support fellow students in their tech journeys.",
-    img: google
-  }
 ];
 
 const glows = [
@@ -64,7 +64,7 @@ const Experience = () => {
               }`}>
 
             {/* Timeline Circle */}
-            <div className="absolute sm:left-1/2 left-0 transform -translate-x-1/2 w-10 h-10 bg-gray-400 border-4 border-[gray-400] rounded-full flex items-center justify-center">
+            <div className="absolute sm:left-1/2 left-0 transform -translate-x-1/2 w-10 h-10 bg-gray-400 border-4 border-[gray-400] rounded-full flex items-center hover:scale-110 justify-center">
               <img
                 src={experience.img}
                 alt={experience.company}
@@ -72,9 +72,15 @@ const Experience = () => {
               />
             </div>
             {/* content Section */}
-            <div className="bg-[rgba(255,255,255,0.1)] text-white p-6 rounded-lg shadow-2xl w-full sm:w-1/2">
-              <h3 className="text-xl font-bold">{experience.position}</h3>
-              <p className="text-gray-400">{experience.duration}</p>
+            <div className="bg-[rgba(255,255,255,0.1)] text-white p-6 rounded-lg shadow-2xl w-full sm:w-1/2 ">
+              <div className="flex mb-4 items-center">
+                <img className="w-15 h-15 object-cover rounded" src={experience.img} />
+                <div className="ml-4">
+                  <h3 className="text-xl font-bold">{experience.company}</h3>
+                  <h6>{experience.position}</h6>
+                  <p className="text-gray-400">{experience.duration}</p>
+                </div>
+              </div>
               <p className="mt-4">{experience.description}</p>
             </div>
           </div>
