@@ -1,4 +1,7 @@
+import { i, img } from 'framer-motion/client';
 import React from 'react'
+import logo from '../assets/logo.png';
+import Car from '../assets/car.jpg';
 
 
 // const glows = [
@@ -7,6 +10,26 @@ import React from 'react'
 //   "top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[220px] h-[220px] opacity-10 blur-[100px]",
 // ];
 
+const projects = [
+  {
+    id : 0,
+    title: "SmartPark",
+    description: "SmartParking is an online parking management system for malls that allows users to pre-book parking slots in advance. It helps reduce waiting time, manage parking space efficiently, and improve the overall user experience.", 
+    img: logo, 
+    tags: ["React","HTML", "CSS", "JavaScript", "Node.js", "Express", "MongoDB" ,"tailwind", "framer-motion"],
+    github: "https://github.com/user/project-one",
+    web: "https://example.com/project-one"
+  },
+  {
+    id : 1,
+    title: "Project Two",
+    description: "My portfolio is my personal website where I showcase my projects, skills, and basic information about myself. It is designed to be simple, responsive, and easy to use, so anyone can quickly understand my work and experience.", 
+    img: Car,
+    tags: ["React","HTML", "CSS", "JavaScript", "tailwind", "framer-motion"],
+    github: "https://github.com/user/project-two",
+    web: "https://example.com/project-two"
+  }
+];
 
 const Projects = () => {
   return (
