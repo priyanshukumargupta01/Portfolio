@@ -8,7 +8,7 @@ import Footer from "./sections/Footer";
 import Home from "./sections/Home";
 import Projects from "./sections/Projects";
 import Skills from "./sections/Skills";
-import Testimonials from "./sections/Testimonials";
+// import Testimonials from "./sections/Testimonials";
 import IntroAnimation from "./componenets/IntroAnimation";
 import React, { useState } from "react";
 
@@ -31,7 +31,7 @@ export default function App() {
           <Skills />
           <Experience />
           <Projects />
-          <Testimonials />
+          {/* <Testimonials /> */}
           <Contact />
           <Footer />
         </div>
