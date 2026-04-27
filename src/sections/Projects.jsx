@@ -60,14 +60,15 @@ const Projects = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true, amount: 0.4 }}
-            key={project.id} className='bg-gray-950 rounded-lg overflow-hidden shadow-lg m-4'>
-            <img src={project.img} alt={project.title} className='w-full h-56 object-cover' />
+            key={project.id} 
+            className='bg-gray-950 hover:scale-95 rounded-lg overflow-hidden m-10 hover:shadow-[0_0_20px_rgba(255,255,255,0.3)]'>
+            <img src={project.img} alt={project.title} className='hover:scale-95 w-full h-56 object-cover' />
             <div className='p-4'>
               <h3 className='text-xl font-bold mb-2'>{project.title}</h3>
               <p className='text-gray-400 mb-4'>{project.description}</p>
               <div className='flex flex-wrap gap-2'>
                 {project.tags.map((tag, index) => (
-                  <span key={index} className='bg-gray-700 text-white text-xs px-2 py-1 rounded'>
+                  <span key={index} className='bg-gray-700  hover:scale-105  text-white text-xs px-2 py-1 rounded'>
                     {tag}
                   </span>
                 ))}
