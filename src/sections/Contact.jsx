@@ -4,9 +4,9 @@ import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
 import Astra from "../assets/Astra.png";
 
-const SERVICE_ID = import.meta.env.service_vqjbm0a;
-const TEMPLATE_ID = import.meta.env.template_agmhndm;
-const PUBLIC_KEY = import.meta.env.DlGsZkDrV2BeKHXfh;
+const SERVICE_ID = import.meta.env.VITE_SERVICE_ID;
+const TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID;
+const PUBLIC_KEY = import.meta.env.VITE_PUBLIC_KEY;
 
 export default function Contact() {
   const [formData, setFormData] = useState({
