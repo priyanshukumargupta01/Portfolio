@@ -15,7 +15,7 @@ export default function IntroAnimation({ onFinish }) {
       "Γειά",
       "Hej",
       "Hallo",
-      "Salam",
+      "Namaste",
     ],
     []
   );
