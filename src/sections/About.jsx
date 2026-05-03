@@ -16,7 +16,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="min-h-screen w-full flex items-center justify-center relative bg-black text-white overflow-hidden"
+      className="h-full w-full flex items-center justify-center relative bg-black text-white overflow-hidden"
     >
       <div className="absolute inset-0 pointer-events-none">
         {glows.map((c, i) => (
