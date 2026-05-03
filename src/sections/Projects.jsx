@@ -35,7 +35,7 @@ const projects = [
 const Projects = () => {
   return (
     <section
-      className='h-full bg-black w-full'
+      className='h-min-screen bg-black w-full'
       id='project'
     >
       {/* <div className="absolute inset-0 pointer-events-none">
