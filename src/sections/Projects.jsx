@@ -14,8 +14,8 @@ import Car from '../assets/car.jpg';
 const projects = [
   {
     id: 0,
-    title: "SmartPark",
-    description: "SmartParking is an online parking management system for malls that allows users to pre-book parking slots in advance. It helps reduce waiting time, manage parking space efficiently, and improve the overall user experience.",
+    title: "ParkNova",
+    description: "ParkNova is a smart parking system that enables users to find and book parking slots in advance with real-time availability.",
     img: Car,
     tags: ["React", "HTML", "CSS", "JavaScript", "Node.js", "Express", "MongoDB", "tailwind", "framer-motion"],
     github: "https://github.com/user/project-one",
@@ -35,7 +35,7 @@ const projects = [
 const Projects = () => {
   return (
     <section
-      className='h-min-screen bg-black w-full'
+      className=' min-h-screen bg-black w-full'
       id='project'
     >
       {/* <div className="absolute inset-0 pointer-events-none">

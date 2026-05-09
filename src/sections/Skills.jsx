@@ -72,7 +72,7 @@ const glows = [
 const Skills = () => (
   <section
     id="skills"
-    className="py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[20vw] font-sans bg-skills-gradient w-full h-min-screen relative bg-black overflow-hidden  "
+    className="py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[20vw] font-sans bg-skills-gradient w-full min-h-screen relative bg-black overflow-hidden  "
   >
     <div className="absolute inset-0 pointer-events-none">
       {glows.map((c, i) => (

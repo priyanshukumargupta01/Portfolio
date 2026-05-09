@@ -31,7 +31,7 @@ const Experience = () => {
   return (
     <section
       id='experience'
-      className='py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[16vw] bg-black h-full font-sans bg-skills-gradient'
+      className='py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[16vw] bg-black min-h-screen font-sans bg-skills-gradient'
     >
       <div className="absolute inset-0 pointer-events-none">
         {glows.map((c, i) => (

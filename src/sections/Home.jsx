@@ -73,7 +73,7 @@ export default function Home() {
   return (
     <section
       id="Home"
-      className="w-full h-min-screen relative bg-black overflow-hidden"
+      className="w-full min-h-screen relative flex items-center bg-black overflow-hidden"
     >
       <ParticalBackground />
 
