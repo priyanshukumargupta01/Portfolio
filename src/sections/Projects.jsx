@@ -62,7 +62,7 @@ const Projects = () => {
             viewport={{ once: true, amount: 0.4 }}
             key={project.id} 
             className='bg-gray-950 hover:scale-95 rounded-lg overflow-hidden m-10 hover:shadow-[0_0_20px_rgba(255,255,255,0.3)]'>
-            <img src={project.img} alt={project.title} className='hover:scale-95 w-full h-56 object-cover' />
+            <img src={project.img} alt={project.title} className='hover:scale-95 w-full h-66 object-cover' />
             <div className='p-4'>
               <h3 className='text-xl font-bold mb-2'>{project.title}</h3>
               <p className='text-gray-400 mb-4'>{project.description}</p>
