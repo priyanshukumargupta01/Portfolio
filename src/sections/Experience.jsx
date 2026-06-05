@@ -3,6 +3,13 @@ import google from "../assets/google.png";
 
 const experiences = [
   {
+   id: 3,
+   company: "Maruti Suzuki",
+   position: "intern",
+   duration: "June 2026 - Present" 
+  },
+  
+  {
     id: 2,
     company: "Google",
     position: "Google Student Ambassador",
