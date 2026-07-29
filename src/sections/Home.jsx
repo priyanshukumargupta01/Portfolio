@@ -42,7 +42,7 @@ const glowVariants = {
 };
 
 export default function Home() {
-  const roles = useMemo(() => ["Web Developer", "Software Developer"], []);
+  const roles = useMemo(() => ["Data Analyst", "Dashboard Developer"], []);
 
   const [index, setIndex] = useState(0);
   const [subIndex, setSubIndex] = useState(0);
@@ -138,10 +138,9 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 1.2 }}
             >
-              I enjoy turning ideas into real, working websites and apps that
-              are simple, fast, and easy to use. I aim to create solutions that
-              feel smooth, look clean, and make things better for the people who
-              use them.
+              I enjoy transforming raw data into meaningful insights by analyzing
+              datasets and building interactive dashboards. My goal is to create
+              data-driven solutions that help businesses make smarter decisions.
             </motion.p>
             <motion.div
               className="mt-10 flex flex-wrap items-center justify-center lg:justify-start gap-6"
@@ -202,19 +201,19 @@ export default function Home() {
                 "conic-gradient(from 0deg, #1cd8d2, #00b8f8, #302b63, #1cd8d2)",
             }}
           />
-        <motion.img
-          src={avator}
-          alt="Priyanshu"
-          className="absolute top-1/2 -translate-y-1/2 object-contain select-none pointer-events-none"
-          style={{
-            right: "-30px",
-            width: "min(45vw, 780px)",
-            maxHeight: "90vh",
-          }}
-          initial={{ opacity: 0, y: 40, scale: 0.98 }}
-          animate={{ opacity: 1, y: 0, scale: 1 }}
-          transition={{ delay: 0.2, duration: 0.8 }}
-        />
+          <motion.img
+            src={avator}
+            alt="Priyanshu - Data Analyst"
+            className="absolute top-1/2 -translate-y-1/2 object-contain select-none pointer-events-none"
+            style={{
+              right: "-30px",
+              width: "min(45vw, 780px)",
+              maxHeight: "90vh",
+            }}
+            initial={{ opacity: 0, y: 40, scale: 0.98 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            transition={{ delay: 0.2, duration: 0.8 }}
+          />
         </div>
       </div>
     </section>
