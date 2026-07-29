@@ -9,8 +9,8 @@ export default function About() {
   ];
   const stats = [
     { label: "Experience", value: "Fresher" },
-    { label: "Speciality", value: "Frontend Developer" },
-    { label: "Focus", value: "Performance & UX" },
+    { label: "Speciality", value: "Data Analysts" },
+    { label: "Focus", value: "Data Analytics & Visualization" },
   ];
 
   return (
@@ -49,11 +49,11 @@ export default function About() {
             </h2>
 
             <p className="mt-2 text-lg sm:text-xl text-white/90 font-semibold">
-              Software Developer
+              Data Analyst 
             </p>
 
             <p className="mt-4 text-gray-300 leading-relaxed text-base sm:text-lg max-w-2xl md:max-w-3xl">
-            Computer Science student passionate about software development and problem-solving, currently focusing on DSA, JavaScript, and React. I learn by building projects, enjoy debugging, and aim to strengthen my fundamentals to prepare for real-world software roles, with an interest in AI.
+           Computer Science student passionate about data analytics and business intelligence, currently focusing on Python, SQL, Pandas, and Power BI. I enjoy analyzing datasets, building interactive dashboards, and transforming raw data into actionable insights to solve real-world problems.
 
             </p>
             <div className="mt-6 grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4 max-w-xl">
@@ -79,9 +79,7 @@ export default function About() {
           </h3>
 
           <p className="text-gray-300 leading-relaxed text-base sm:text-lg">
-            I'm a Software Developer, and Web Developer — passionate about
-            building fast, resilient applications and sharing coding insights on
-            Instagram and YouTube.
+            I'm a Data Analyst and Dashboard Developer, passionate about transforming raw data into meaningful insights by building interactive dashboards and data-driven solutions.
           </p>
 
           <p className="mt-4 text-gray-400 text-base sm:text-lg">
