@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import google from "../assets/google.png";
+import maruti from "../assets/maruti.png";
 
 const marutiLogo = "https://upload.wikimedia.org/wikipedia/commons/1/12/Suzuki_logo_2015s.svg";
 
@@ -10,7 +11,7 @@ const experiences = [
     position: "Data Analyst Intern",
     duration: "June 2026 - Present",
     description: "Designed and developed an automated, dynamic web-based dashboard application that ingests raw datasets and instantly generates real-time interactive visual analytics without requiring external BI tools. Built data processing pipelines to clean, aggregate, and present complex operational data into actionable business insights.",
-    img: marutiLogo
+    img: maruti
   },
   {
     id: 2,
