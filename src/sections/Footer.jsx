@@ -12,7 +12,7 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto flex flex-col items-center justify-center text-center">
         {/* Name Title */}
         <h2 className="text-3xl sm:text-4xl font-bold tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-200 to-gray-400">
-          Priyanshu Kumar
+          Priyanshu Kumar Gupta
         </h2>
 
         {/* Subtitle / Tagline */}
