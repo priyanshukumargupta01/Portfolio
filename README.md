@@ -1,58 +1,29 @@
-# 🚀 Priyanshu Personal Website
+# 📊 Priyanshu Kumar | Data Analyst Portfolio
 
-This is my personal portfolio website built using **React + Vite**, where I showcase my projects, skills, and experience.
-
-## 🔥 Features
-
-* Modern UI/UX design
-* Fast performance with Vite
-* Responsive (Mobile + Desktop)
-* Clean and minimal layout
-* Project showcase section
-
-## 🛠️ Tech Stack
-
-* React.js
-* Vite
-* Tailwindcss
-* JavaScript (ES6+)
-* HTML5 & CSS3
-
-## 📂 Project Setup
-
-Clone the repository:
-
-```bash
-git clone https://github.com/priyanshukumargupta01/Portfolio.git
-```
-
-Go to project folder:
-
-```bash
-cd your-repo-name
-```
-
-Install dependencies:
-
-```bash
-npm install
-```
-
-Run locally:
-
-```bash
-npm run dev
-```
-
-## 🌐 Live Demo
-
-👉 https://priyanshugupta01.netlify.app/
-
-## 🤝 Connect with Me
-
-* GitHub: https://github.com/priyanshukumargupta01
-* LinkedIn: https://www.linkedin.com/in/priyanshukumargupta
+A modern, high-performance personal portfolio built using **React + Vite** and **Tailwind CSS**. Designed to showcase data analytics expertise, interactive dashboards, technical projects, and professional experience.
 
 ---
 
-⭐ If you like this project, give it a star!
+## 🌟 Key Highlights
+
+* **Data-Centric Focus:** Showcases skills in Python, SQL, Power BI, Excel, and data visualization.
+* **Modern & Sleek UI:** Built with Tailwind CSS, custom glow animations, and Framer Motion transitions.
+* **Interactive Project Showcase:** Highlights real-world projects, dynamic dashboards, and technical workflows.
+* **Fully Responsive:** Optimized for desktop, tablet, and mobile displays.
+* **Fast Performance:** Powered by Vite for near-instant build times and page loads.
+
+---
+
+## 🛠️ Tech Stack & Skills
+
+* **Analytics & BI:** Python (Pandas, NumPy), SQL, Power BI, Microsoft Excel, Tableau
+* **Frontend Development:** React.js, JavaScript (ES6+), Tailwind CSS, HTML5, CSS3
+* **Tools & Libraries:** Vite, Git, GitHub, Framer Motion, EmailJS, VS Code
+
+---
+
+## 📂 Local Setup & Installation
+
+Clone the repository:
+```bash
+git clone [https://github.com/priyanshukumargupta01/Portfolio.git](https://github.com/priyanshukumargupta01/Portfolio.git)
